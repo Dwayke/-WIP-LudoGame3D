@@ -3,6 +3,7 @@ using UnityEngine;
 public class LudoGameStateManager : MonoBehaviour
 {
     #region VARS
+    [SerializeField] EGameState _gameState;
     #endregion
     #region ENGINE
     #endregion

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BaseTile : MonoBehaviour
+public class BaseTile : LudoTile
 {
     #region VARS
     #endregion
