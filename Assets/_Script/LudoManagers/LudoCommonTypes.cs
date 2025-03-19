@@ -12,6 +12,10 @@ public class LudoCommonTypes : MonoBehaviour
     #endregion
 }
 
+public enum ETeam
+{
+    Red = 0, Blue = 1, Yellow = 2, Green = 3
+}
 public enum ETileColor
 {
     Red = 0, Green = 1, Blue = 2, Yellow = 3

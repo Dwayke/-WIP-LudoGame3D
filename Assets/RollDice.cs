@@ -1,104 +1,88 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class RollDice : MonoBehaviour
 {
-    [SerializeField] private GameObject dicePrefab;
-    [SerializeField] private Transform spawnPoint;
-    [SerializeField] private float rollForce = 5f;
-    [SerializeField] private float torqueForce = 500f;
+    #region VARS
+    [SerializeField] private GameObject _dicePrefab;
+    [SerializeField] private Transform _spawnPoint;
+    [SerializeField] private float _rollForce = 5f;
+    [SerializeField] private float _torqueForce = 500f;
 
-    private GameObject currentDice;
-    private Rigidbody diceRigidbody;
-    private bool isRolling = false;
-    private bool resultDetermined = false;
+    private GameObject _currentDice;
+    private Rigidbody _diceRigidbody;
+    private bool _isRolling = false;
+    private bool _resultDetermined = false;
 
-    // Dictionary to store face direction vectors and their corresponding values
-    private readonly Dictionary<Vector3, int> diceFaceDirections = new()
+    private readonly Dictionary<Vector3, int> _diceFaceDirections = new()
     {
-        { Vector3.up, 1 },
-        { Vector3.down, 6 },
-        { Vector3.right, 5 },
-        { Vector3.left, 2 },
-        { Vector3.forward, 3 },
-        { Vector3.back, 4 }
+        { Vector3.up, 2 },
+        { Vector3.down, 5 },
+        { Vector3.right, 4 },
+        { Vector3.left, 3 },
+        { Vector3.forward, 1 },
+        { Vector3.back, 6 }
     };
 
+    private event Action<int> OnDiceRollComplete;
+    #endregion
+    #region MEMBER METHODS
     public void RollTheDice()
     {
-        // If a dice is already rolling, don't spawn another
-        if (isRolling)
-            return;
-
-        // If there's an existing dice, destroy it
-        if (currentDice != null)
-            Destroy(currentDice);
-
-        // Create new dice at spawn point
-        currentDice = Instantiate(dicePrefab, spawnPoint.position, Random.rotation);
-        
-        if (!currentDice.TryGetComponent<Rigidbody>(out diceRigidbody))
+        if (_isRolling) return;
+        if (_currentDice != null) Destroy(_currentDice);
+        _currentDice = Instantiate(_dicePrefab, _spawnPoint.position, Random.rotation);       
+        if (!_currentDice.TryGetComponent<Rigidbody>(out _diceRigidbody))
         {
             Debug.LogError("Dice prefab must have a Rigidbody component!");
             return;
         }
 
-        // Apply random force and torque to roll the dice
         Vector3 randomDirection = new Vector3(Random.Range(-1f, 1f), Random.Range(0.5f, 1f), Random.Range(-1f, 1f)).normalized;
-        diceRigidbody.AddForce(randomDirection * rollForce, ForceMode.Impulse);
-
+        _diceRigidbody.AddForce(randomDirection * _rollForce, ForceMode.Impulse);
         Vector3 randomTorque = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
-        diceRigidbody.AddTorque(randomTorque * torqueForce);
+        _diceRigidbody.AddTorque(randomTorque * _torqueForce);
 
-        isRolling = true;
-        resultDetermined = false;
-
-        // Start checking for when the dice stops
+        _isRolling = true;
+        _resultDetermined = false;
         StartCoroutine(CheckDiceStop());
     }
-
+    #endregion
+    #region LOCAL METHODS
     private IEnumerator CheckDiceStop()
     {
-        // Wait for the dice to settle
         yield return new WaitForSeconds(0.5f);
 
-        // Check if the dice has stopped moving
-        while (isRolling)
+        while (_isRolling)
         {
-            // If dice is moving very slowly or has stopped
-            if (diceRigidbody.linearVelocity.magnitude < 0.01f && diceRigidbody.angularVelocity.magnitude < 0.01f)
+            if (_diceRigidbody.linearVelocity.magnitude < 0.01f && _diceRigidbody.angularVelocity.magnitude < 0.01f)
             {
-                // Wait a bit to confirm it's really stopped
                 yield return new WaitForSeconds(0.5f);
 
-                // Check again to make sure it's still stopped
-                if (diceRigidbody.linearVelocity.magnitude < 0.01f && diceRigidbody.angularVelocity.magnitude < 0.01f)
+                if (_diceRigidbody.linearVelocity.magnitude < 0.01f && _diceRigidbody.angularVelocity.magnitude < 0.01f)
                 {
-                    isRolling = false;
+                    _isRolling = false;
                     DetermineResult();
                 }
             }
-
             yield return new WaitForSeconds(0.1f);
         }
     }
 
     private void DetermineResult()
     {
-        if (resultDetermined || currentDice == null)
-            return;
+        if (_resultDetermined || _currentDice == null)return;
+        _resultDetermined = true;
 
-        resultDetermined = true;
-
-        // Find which face is pointing up (closest to world up)
         float bestAlignment = -1f;
         Vector3 bestDirection = Vector3.zero;
-
-        foreach (Vector3 faceDirection in diceFaceDirections.Keys)
+        foreach (Vector3 faceDirection in _diceFaceDirections.Keys)
         {
             // Transform local face direction to world space
-            Vector3 worldFaceDirection = currentDice.transform.TransformDirection(faceDirection);
+            Vector3 worldFaceDirection = _currentDice.transform.TransformDirection(faceDirection);
             float alignment = Vector3.Dot(worldFaceDirection, Vector3.up);
 
             if (alignment > bestAlignment)
@@ -108,12 +92,10 @@ public class RollDice : MonoBehaviour
             }
         }
 
-        // Get the value based on the face direction
-        int result = diceFaceDirections[bestDirection];
+        int result = _diceFaceDirections[bestDirection];
         Debug.Log("Dice Result: " + result);
 
-        // You can trigger events or update UI with the result here
-        // For example:
-        // OnDiceRollComplete.Invoke(result);
+        OnDiceRollComplete.Invoke(result);
     }
+#endregion
 }
