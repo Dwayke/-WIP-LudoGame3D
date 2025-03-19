@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class BaseTile : LudoTile
 {
     #region VARS

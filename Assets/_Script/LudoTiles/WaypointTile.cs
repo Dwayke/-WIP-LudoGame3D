@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class WaypointTile : LudoTile
 {
     #region VARS

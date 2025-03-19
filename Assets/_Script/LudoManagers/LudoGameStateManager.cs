@@ -9,18 +9,24 @@ public class LudoGameStateManager : MonoBehaviour
     private void Start()
     {
         LudoManagers.Instance.GameManager.OnGameStarted += OnGameStarted;
+        LudoManagers.Instance.PlayerController.OnPieceSelected += OnPieceSelected;
     }
     private void OnDisable()
     {
         LudoManagers.Instance.GameManager.OnGameStarted -= OnGameStarted;
+        LudoManagers.Instance.PlayerController.OnPieceSelected -= OnPieceSelected;
     }
     #endregion
     #region MEMBER METHODS
     #endregion
     #region LOCAL METHODS
+    private void OnPieceSelected(BaseDisk obj)
+    {
+        gameState = EGameState.PieceMotion;
+    }
     private void OnGameStarted()
     {
-        gameState = EGameState.DiceRoll;
+        gameState = EGameState.PieceSelection;
     }
     #endregion
 }

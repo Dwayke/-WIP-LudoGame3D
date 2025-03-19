@@ -4,6 +4,7 @@ public class BaseDisk : MonoBehaviour
 {
     #region VARS
     public EPieceState pieceState;
+    public ETeam color;
     [SerializeField] LudoTile currentTile;
     [SerializeField] LudoTile originTile;
     [SerializeField] LudoTile homeTile;

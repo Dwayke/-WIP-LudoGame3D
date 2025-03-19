@@ -27,7 +27,7 @@ public class LudoGameManager : MonoBehaviour
         { Vector3.back, 6 }
     };
 
-    public bool isGameStarted = false;
+    [HideInInspector]public bool isGameStarted = false;
     public event Action OnGameStarted;
     public event Action<int> OnDiceRollComplete;
     #endregion
@@ -85,7 +85,6 @@ public class LudoGameManager : MonoBehaviour
         Vector3 bestDirection = Vector3.zero;
         foreach (Vector3 faceDirection in _diceFaceDirections.Keys)
         {
-            // Transform local face direction to world space
             Vector3 worldFaceDirection = _currentDice.transform.TransformDirection(faceDirection);
             float alignment = Vector3.Dot(worldFaceDirection, Vector3.up);
 

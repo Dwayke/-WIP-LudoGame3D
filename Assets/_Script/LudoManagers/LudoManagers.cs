@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class LudoManagers : Singleton<LudoManagers>
 {
     #region VARS
@@ -8,6 +6,7 @@ public class LudoManagers : Singleton<LudoManagers>
     public LudoGameStateManager GameStateManager;
     public LudoTurnManager TurnManager;
     public LudoUIManager UIManager;
+    public LudoPlayerController PlayerController;
     #endregion
     #region ENGINE
     void Start()
@@ -17,6 +16,7 @@ public class LudoManagers : Singleton<LudoManagers>
         if(!GameStateManager) GameStateManager = GetComponent<LudoGameStateManager>();
         if(!TurnManager) TurnManager = GetComponent<LudoTurnManager>();
         if(!UIManager) UIManager = GetComponent<LudoUIManager>();
+        if(!PlayerController) PlayerController = GetComponent<LudoPlayerController>();
     }
     #endregion
 }

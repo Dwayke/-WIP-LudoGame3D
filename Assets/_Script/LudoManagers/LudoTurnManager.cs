@@ -1,14 +1,17 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LudoTurnManager : MonoBehaviour
 {
     #region VARS
-    public ETeam team = 0;
+    public ETeam currentTurn = 0;
     public List<int> _lastRolls;
     #endregion
     #region ENGINE
+    private void Start()
+    {
+        LudoManagers.Instance.UIManager.DisplayCurrentTurn(currentTurn);
+    }
     private void OnEnable()
     {
         LudoManagers.Instance.GameManager.OnDiceRollComplete += OnDiceRollComplete; 
@@ -25,11 +28,12 @@ public class LudoTurnManager : MonoBehaviour
     {
         if (!LudoManagers.Instance.GameManager.isGameStarted&&lastRoll!=6)
         {
-            if (team != ETeam.Green) team += 1;
-            else team = 0;
+            if (currentTurn != ETeam.Green) currentTurn += 1;
+            else currentTurn = 0;
         }
         _lastRolls.Add(lastRoll);
         Debug.Log("Last Move: "+_lastRolls[^1]);
+        LudoManagers.Instance.UIManager.DisplayCurrentTurn(currentTurn);
     }
     #endregion
 }

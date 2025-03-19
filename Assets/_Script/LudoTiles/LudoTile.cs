@@ -16,9 +16,6 @@ public class LudoTile : MonoBehaviour
     {
         gameObject.name = $"Tile: {color} {type}, Tile Index: {tileIndex}";
     }
-    private void Start()
-    {
-    }
     #endregion
     #region MEMBER METHODS
     #endregion
