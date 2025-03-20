@@ -628,9 +628,1225 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1223688380}
     m_Modifications:
+    - target: {fileID: 15906527293701494, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 40274642609262699, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 10'
+      objectReference: {fileID: 0}
+    - target: {fileID: 97389970825385121, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 150623906399797852, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 238557098744026216, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 261087621900329934, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 264485907100925408, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 274707122732469978, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 277532971386866340, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 290574860881553635, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 305889793982062504, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 7'
+      objectReference: {fileID: 0}
+    - target: {fileID: 336810690651123753, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 386448500867779555, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 421911927371838346, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 434733495164201254, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 442988249009740514, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 4'
+      objectReference: {fileID: 0}
+    - target: {fileID: 531923879654699726, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 5'
+      objectReference: {fileID: 0}
+    - target: {fileID: 534324644847583094, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 550972256402731636, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 561927753455424933, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 565505800032174569, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 569523391901267893, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 615128316510876764, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 626497954238988470, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 7'
+      objectReference: {fileID: 0}
+    - target: {fileID: 677361736392466100, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 5'
+      objectReference: {fileID: 0}
+    - target: {fileID: 678680584602634124, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 709159158261366000, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 715987706329729256, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 798692211397692280, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 836367643729380476, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 838666800140702494, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 842798850669485759, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 882004003250719260, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 963824848597833083, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011646155305897601, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Base, Tile Index: 2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046573390858685713, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090870311297532384, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 1094479763818084344, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 8'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108729473263217600, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 1110461933330570793, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136951415449875217, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 1160261888822754193, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 1165905923369215423, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 1168738598749810051, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188462263129983147, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 6'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210866224958526406, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210866224958526406, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Size.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210866224958526406, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Size.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319850454662571939, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386727289638786586, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 1437249226119162622, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446995598406726661, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460197229086927793, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499827863618155711, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 1517724228262550907, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522930214531774692, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555008486164208787, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 1588471541254237398, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1697590599812323801, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 1709017789265655809, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709649074747879058, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 16'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732365683984112340, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734514293973456239, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 1741467527414940173, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 9'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743417732615725787, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Base, Tile Index: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775604455309823241, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 11'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830448256707364640, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881796035948244266, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Home, Tile Index: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934234899207788741, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 1935027115403313661, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 4'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945682704569747143, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 1951471506503449134, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961580954674197037, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 10'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1987891049513696273, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2051094704554554720, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 5'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054185716209299849, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 2058774264521426833, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 14'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061446720316178158, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077090823965568433, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 14'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2078578023852922968, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 2193132379637898527, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197189669986346158, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Home, Tile Index: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2224613389287566955, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256685824460361863, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293216676564824310, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323285617041139125, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2349270106141028466, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 2356277954946214577, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457559659468396625, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468915725176678721, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506185738860455461, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 2521736375650996797, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 2561639799198454418, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 14'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567384192003594897, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594772619194783314, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 12'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2597448218368356141, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2615058891245208845, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661401885109231068, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2694753328170884546, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Base, Tile Index: 2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715210240898098140, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 2758525380706417590, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 2776959602588773972, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2816421402645800145, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 2831327410881878090, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 17'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2832428203803949044, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837286300500809204, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Base, Tile Index: 2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911568135032208037, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 2927885929891759423, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2947470767740477463, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972215247397301393, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
     - target: {fileID: 2975109978762707006, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
       propertyPath: m_Name
       value: Ludoboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995168663327282133, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Home, Tile Index: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3026177521079108292, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3058381794035530348, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 3082940252350435103, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 6'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103247628692526011, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 3210226477991926969, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214067368510815655, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Base, Tile Index: 1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232010620654666509, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 15'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235684278343504787, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3239021524964432679, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251610404119381995, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 3281377044562376135, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372081577599840554, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3395755813795071534, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427455993237683051, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470029818995255306, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3476063537692333283, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 3551539684868654426, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Base, Tile Index: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3552972125725201484, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 13'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3564161684866179156, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 6'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582948983878883630, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602802481568445960, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3669951408614739182, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3683152309580204453, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Home, Tile Index: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687313654108534275, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 15'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691344411592620962, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716976094934571293, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Base, Tile Index: 1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765536854284905306, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3793228092943524512, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 16'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817739439042207291, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 3843341181418390368, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3889404436770684359, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 17'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900097321112118701, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3954914056072828442, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010911380293017412, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013775437316427811, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 4014724280234023655, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Base, Tile Index: 3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4030974636296910485, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4041651633925093591, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080617277926823370, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 13'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141479178521610606, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 4161394793293724701, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 6'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4196427074924604450, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219554579751201504, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 14'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253175832396942194, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255972222893343566, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 4265583579285542236, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311712065512029396, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 13'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370598338016507668, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439678641266120790, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483469239238144950, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 4508590185305129370, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 9'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520503908001444446, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4569983760854254972, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 4609439574060997234, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671375558047428827, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Base, Tile Index: 3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710474061404802220, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 12'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729281838930393354, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 4746888088143996794, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4761530399675905226, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767420396804088916, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 12'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770841798156560732, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4848117491174228480, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860927682608342943, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940965706244792976, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 4957301719622334177, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5018647713480324485, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027812145338710889, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 5050539799245007526, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075489294225683192, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5129905977679672579, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 16'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135008060323143060, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 5164943550284758593, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 15'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196781318377532397, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Base, Tile Index: 3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204016333974585956, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5208285601973361043, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 10'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226595697017205008, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5262078765919703036, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296510596978999347, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 7'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5297595894143545229, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448563688037017516, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 5486157261412482479, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 5532306765675292824, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 5536387804155555734, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602930315089322858, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646786494928029103, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727939481729460753, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 5733588047733161304, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 5775561851605407289, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791498005939123805, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5829886623627898489, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876889136795541138, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879721004893823525, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 5886391144213342414, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913358574411202427, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 10'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5976074112933907165, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 5979483460887899986, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983880731383780504, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020500878134619377, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060754686284544048, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 6071112513087331623, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089050053590332274, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 6121102256612367333, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6131779972925393683, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164880106832696799, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228322059289158157, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230677361145298200, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 11'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272965240659381210, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278130770371896545, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 17'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322981588847934797, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353628288264774109, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 11'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400142815536976490, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444956501614291100, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Base, Tile Index: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499060257789724226, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 6572936142751386112, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626550579328688098, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 6638441631922240297, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 4'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686730618258566240, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6766036227425075652, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6873763870986725863, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 6878970515184955113, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 4'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881644748943762315, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886864179861879774, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6897313872253559534, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6897333239083374483, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6968579826226563425, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036616153083259374, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7074831080456249649, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 7138224000909126825, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 7172307121156890477, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Base, Tile Index: 1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178993684945461213, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 7229908237079971036, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7258037143001797525, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308701318502311129, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310780107358038882, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 7385893163902318449, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7415716439150251431, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 7424974905807098722, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431483926681029202, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 7'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489136609005733461, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520178330851756370, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 7547799651121495685, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 13'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7572563791927965230, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 8'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577702898524635250, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7615577975816389897, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7665871670759835630, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 12'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676870890362968007, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694439755578263991, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 7705305051081335022, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Base, Tile Index: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705816223719188591, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7716034552173495373, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 9'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751472311608966180, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 15'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7812416318420677465, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846761338994930843, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Base, Tile Index: 1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860976967065517411, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7877257464487367689, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904828966381572448, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7944674855996155820, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7966199380898995016, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 7993345225465992612, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009229091494991345, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Waypoint, Tile Index: 2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8050649983988419677, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075332595511892396, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 8'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115944359959456472, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 9'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133022659432837423, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8149612615397779599, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187379125637359424, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 17'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222866190649678454, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8240477273120747606, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266570313385771687, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279877046460042445, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Base, Tile Index: 2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364498194202342970, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380339579590936362, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8399318636681350179, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 8455607540774833110, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 11'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8500224746263692778, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532637918309219022, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558153533197495571, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 5'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656888742937016917, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 8693473431445684796, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 8752700679306516821, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753190891407937478, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Yellow Waypoint, Tile Index: 16'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8775041901673620496, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8778383355255325087, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 8820288714717495113, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Red Base, Tile Index: 3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834048364748113411, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 8837916418741973087, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 8840714202514492648, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852652957625779138, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867195447421516020, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 8901456960695369018, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929717583942160163, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Green Waypoint, Tile Index: 3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8977872947832443776, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 9024106087636737337, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Name
+      value: 'Tile: Blue Waypoint, Tile Index: 8'
       objectReference: {fileID: 0}
     - target: {fileID: 9026399894904524071, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
       propertyPath: m_LocalPosition.x
@@ -672,10 +1888,242 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9126118495528647442, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+    - target: {fileID: 9128926200194891628, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: color
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166041192314427133, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9198839059196861887, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 759951939061999899, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6247423690942148389, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7351633434289668362, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6191405867103402139, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1082429287754485273, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 19765018336512591, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2587473118799453156, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7926809805202202281, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 436883588064666371, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1227987060426675958, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6570814047119879040, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6870118947523537379, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3252226992400220841, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7034458851153406590, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3074978982157485673, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5660409073231391418, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4432668064321795675, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6773456071299657754, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6760684615843237662, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6920106728146228361, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 774567510072555317, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8272261563635637208, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6124961167133880274, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1027248664049722933, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3521953725614565606, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 945472116688931667, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6933122718865416917, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4013263784920274273, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1303985299675080406, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5840288587808322854, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7152531425935151893, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3567135745797144881, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1581625338587314506, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2736544038929389558, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5625372561481130488, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3344667657927445681, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5041062467863526253, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 453007562346007250, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 181212461318064101, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2104449932871475454, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6221516144194107922, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1537613138115469723, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4059488119663211695, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 113016966471259213, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8366650616091969986, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7076452781346853046, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4712960857248058728, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1262263661803067890, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5223814890410055767, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3672130807879444527, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1563448969029489514, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7111889953386817759, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2204973823690553961, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8700718271036404667, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2414404911012778436, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7221394605697640856, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4557551689945002326, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2641796372129571132, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1439700715037332742, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 9215749739026168296, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1827903881630309456, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4656929373725037768, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8732788576022859095, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8755526136215633443, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 697870295471375504, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8968947824243744557, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5406860882519371951, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4066453140248395959, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 3724087992722226715, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4182640086755975928, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8095735424141368125, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4384729769908595004, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ce18d38c438ac3f4ea4de36921ff4172, type: 3}
 --- !u!1 &351424105
 GameObject:
@@ -702,7 +2150,7 @@ Transform:
   m_GameObject: {fileID: 351424105}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1943,7 +3391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTurn: 0
-  _lastRolls: 
+  lastRolls: 
 --- !u!1 &1136514521
 GameObject:
   m_ObjectHideFlags: 0
@@ -2768,6 +4216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _board: {fileID: 307570927}
+  _yOffset: 0.25
   waypointTileList: []
   baseTileList: []
 --- !u!1001 &1594307797

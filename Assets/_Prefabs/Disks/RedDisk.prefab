@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 2472564193317692404}
   m_Layer: 0
   m_Name: RedDisk
-  m_TagString: Untagged
+  m_TagString: Disk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pieceState: 0
+  color: 0
   currentTile: {fileID: 0}
   originTile: {fileID: 0}
   homeTile: {fileID: 0}

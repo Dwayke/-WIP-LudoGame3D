@@ -3,6 +3,10 @@ public class BaseTile : LudoTile
     #region VARS
     #endregion
     #region ENGINE
+    private void Start()
+    {
+        LudoManagers.Instance.BoardManager.AddTile(this);
+    }
     #endregion
     #region MEMBER METHODS
     #endregion

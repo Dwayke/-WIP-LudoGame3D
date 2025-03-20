@@ -39,7 +39,7 @@ public class LudoPlayerController : MonoBehaviour
         {
             if (info.collider.gameObject.TryGetComponent<BaseDisk>(out BaseDisk disk))
             {
-                if (LudoManagers.Instance.TurnManager._lastRolls[^1] == 6)
+                if (LudoManagers.Instance.TurnManager.lastRolls[^1] == 6)
                 {
                     if (disk.color == LudoManagers.Instance.TurnManager.currentTurn&&disk.pieceState != EPieceState.Home)
                     {

@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 3530558039522196734}
   m_Layer: 0
   m_Name: YellowDisk
-  m_TagString: Untagged
+  m_TagString: Disk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
