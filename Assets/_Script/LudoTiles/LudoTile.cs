@@ -16,6 +16,7 @@ public class LudoTile : MonoBehaviour
     private void Awake()
     {
         gameObject.name = $"Tile: {color} {type}, Tile Index: {tileIndex}";
+        tileTransform = transform;
         FindNextTile();
     }
     #endregion

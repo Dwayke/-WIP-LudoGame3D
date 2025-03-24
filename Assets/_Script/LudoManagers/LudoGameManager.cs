@@ -27,7 +27,8 @@ public class LudoGameManager : MonoBehaviour
         { Vector3.back, 6 }
     };
 
-    [HideInInspector]public bool isGameStarted = false;
+    public bool isGameStarted = false;
+    public bool isFirstMove = true;
     public event Action OnGameStarted;
     public event Action<int> OnDiceRollComplete;
     #endregion
@@ -96,7 +97,7 @@ public class LudoGameManager : MonoBehaviour
         }
 
         int result = _diceFaceDirections[bestDirection];
-        TryStartGame(result);
+        if(!isGameStarted)TryStartGame(result);
         Debug.Log("Dice Result: " + result);
 
         OnDiceRollComplete.Invoke(result);

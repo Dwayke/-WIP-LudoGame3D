@@ -9,7 +9,7 @@ public class LudoTurnManager : MonoBehaviour
     public List<int> lastRolls;
     #endregion
     #region ENGINE
-    private void Start()
+    private void Update()
     {
         LudoManagers.Instance.UIManager.DisplayCurrentTurn(currentTurn);
     }
@@ -20,8 +20,11 @@ public class LudoTurnManager : MonoBehaviour
     }
     private void OnDisable()
     {
-        LudoManagers.Instance.GameManager.OnDiceRollComplete -= OnDiceRollComplete;
-        LudoManagers.Instance.BoardManager.OnMoveComplete -= OnMoveComplete;
+        if (LudoManagers.Instance != null)
+        {
+            LudoManagers.Instance.GameManager.OnDiceRollComplete -= OnDiceRollComplete;
+            LudoManagers.Instance.BoardManager.OnMoveComplete -= OnMoveComplete;
+        }
     }
     #endregion
     #region MEMBER METHODS
@@ -29,27 +32,38 @@ public class LudoTurnManager : MonoBehaviour
     #region LOCAL METHODS
     private void OnDiceRollComplete(int lastRoll)
     {
+        lastRolls.Add(lastRoll);
         if (!LudoManagers.Instance.GameManager.isGameStarted&&lastRoll!=6)
         {
             if (currentTurn != ETeam.Green) currentTurn += 1;
             else currentTurn = 0;
         }
-        lastRolls.Add(lastRoll);
+        if (!CheckFreeDisks() && !LudoManagers.Instance.GameManager.isFirstMove && lastRoll != 6)
+        {
+            if (currentTurn != ETeam.Green) currentTurn += 1;
+            else currentTurn = 0;
+            LudoManagers.Instance.GameStateManager.RollAgain();
+        }
         Debug.Log("Last Move: "+lastRolls[^1]);
-        LudoManagers.Instance.UIManager.DisplayCurrentTurn(currentTurn);
     }
     private void OnMoveComplete()
     {
-        if (lastRolls[^1] == 6)
+        if (lastRolls[^1] == 6 && !LudoManagers.Instance.GameManager.isFirstMove)
         {
             LudoManagers.Instance.GameStateManager.RollAgain();
         }
         else 
         {
-            if (currentTurn != ETeam.Green) currentTurn += 1;
-            else currentTurn = 0;
             LudoManagers.Instance.GameStateManager.SwitchTurn();
         }
+    }
+    public bool CheckFreeDisks()
+    {
+        foreach (var disk in LudoManagers.Instance.BoardManager.availableDisks)
+        {
+            if (disk.pieceState == EPieceState.Free) return true;
+        }
+        return false;
     }
     #endregion
 }

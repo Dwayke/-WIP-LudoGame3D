@@ -5,7 +5,10 @@ public class WaypointTile : LudoTile
     #region ENGINE
     private void Start()
     {
-        LudoManagers.Instance.BoardManager.AddTile(this);
+        if (LudoManagers.Instance != null)
+        {
+            LudoManagers.Instance.BoardManager.AddTile(this);
+        }
     }
     #endregion
     #region MEMBER METHODS
