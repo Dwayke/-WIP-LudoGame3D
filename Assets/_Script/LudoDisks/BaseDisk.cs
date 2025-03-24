@@ -8,7 +8,6 @@ public class BaseDisk : MonoBehaviour
     [Range(0,3)]public int index;
     public int pathIndex;
     public LudoTile currentTile;
-    public LudoTile nextTile;
     [SerializeField] LudoTile originTile;
     [SerializeField] LudoTile homeTile;
     #endregion

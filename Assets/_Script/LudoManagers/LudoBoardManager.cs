@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public class LudoBoardManager : MonoBehaviour
@@ -39,36 +40,52 @@ public class LudoBoardManager : MonoBehaviour
     private void OnPieceSelected(BaseDisk selectedDisk)
     {
         selectedDisk.pieceState = EPieceState.Free;
-        MovePiece(selectedDisk);
+        MovePieceAsync(selectedDisk);
     }
-    private void MovePiece(BaseDisk selectedDisk)
+    private async void MovePieceAsync(BaseDisk selectedDisk)
     {
         int lastRoll = LudoManagers.Instance.TurnManager.lastRolls[^1];
         Vector3 targetLocation;
+        List<LudoTile> currentPath = null;
         switch (selectedDisk.color)
         {
             case ETeam.Red:
-                targetLocation = _redPath[selectedDisk.pathIndex+lastRoll].tileTransform.position + (Vector3.up * _yOffset);
-                selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(() => { OnMoveComplete.Invoke(selectedDisk); });
-                selectedDisk.pathIndex += lastRoll;
+                currentPath = _redPath;
                 break;
             case ETeam.Blue:
-                targetLocation = _bluePath[selectedDisk.pathIndex + lastRoll].tileTransform.position + (Vector3.up * _yOffset);
-                selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(() => { OnMoveComplete.Invoke(selectedDisk); });
-                selectedDisk.pathIndex += lastRoll;
+                currentPath = _bluePath;
                 break;
             case ETeam.Yellow:
-                targetLocation = _yellowPath[selectedDisk.pathIndex + lastRoll].tileTransform.position + (Vector3.up * _yOffset);
-                selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(() => { OnMoveComplete.Invoke(selectedDisk); });
-                selectedDisk.pathIndex += lastRoll;
+                currentPath = _yellowPath;
                 break;
             case ETeam.Green:
-                targetLocation = _greenPath[selectedDisk.pathIndex + lastRoll].tileTransform.position + (Vector3.up * _yOffset);
-                selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(() => { OnMoveComplete.Invoke(selectedDisk); });
-                selectedDisk.pathIndex += lastRoll;
+                currentPath = _greenPath;
                 break;
             default:
                 break;
+        }
+        if (currentPath == null)
+            return;
+        if (selectedDisk.currentTile.type == ETileType.Base)
+        {
+            int targetIndex = selectedDisk.pathIndex + lastRoll;
+            targetLocation = currentPath[targetIndex].tileTransform.position + (Vector3.up * _yOffset);
+            await selectedDisk.transform.DOMove(targetLocation, 0.5f).AsyncWaitForCompletion();
+            selectedDisk.pathIndex = targetIndex;
+            OnMoveComplete.Invoke(selectedDisk);
+        }
+        else
+        {
+            float moveSpeed = 0.3f;
+            for (int i = 1; i <= lastRoll; i++)
+            {
+                int targetIndex = selectedDisk.pathIndex + i;
+                targetLocation = currentPath[targetIndex].tileTransform.position + (Vector3.up * _yOffset);
+                await selectedDisk.transform.DOMove(targetLocation, moveSpeed).AsyncWaitForCompletion();
+                await UniTask.Delay(100);
+            }
+            selectedDisk.pathIndex += lastRoll;
+            OnMoveComplete.Invoke(selectedDisk);
         }
     }
     #endregion
