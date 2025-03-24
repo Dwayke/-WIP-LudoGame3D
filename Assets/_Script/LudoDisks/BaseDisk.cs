@@ -6,7 +6,7 @@ public class BaseDisk : MonoBehaviour
     public EPieceState pieceState;
     public ETeam color;
     [Range(0,3)]public int index;
-    public int pathIndex = -6;
+    public int pathIndex;
     public LudoTile currentTile;
     public LudoTile nextTile;
     [SerializeField] LudoTile originTile;
@@ -24,12 +24,12 @@ public class BaseDisk : MonoBehaviour
         {
             LudoManagers.Instance.BoardManager.availableDisks.Remove(this);
         }
-        LudoManagers.Instance.GameManager.OnDiceRollComplete += OnRollComplete;
+        LudoManagers.Instance.TurnManager.OnTurnSwitched += OnTurnSwitched;
     }
     private void OnDisable()
     {
         if(LudoManagers.Instance != null)
-        LudoManagers.Instance.GameManager.OnDiceRollComplete -= OnRollComplete;
+        LudoManagers.Instance.TurnManager.OnTurnSwitched -= OnTurnSwitched;
     }
     private void Awake()
     {
@@ -40,19 +40,28 @@ public class BaseDisk : MonoBehaviour
         if (collision.gameObject.GetComponent<LudoTile>() != null)
         {
             currentTile = collision.gameObject.GetComponent<LudoTile>();
+            currentTile._occupyingDiskList.Add(this);
         }      
+    }
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.gameObject.GetComponent<LudoTile>() != null)
+        {
+            currentTile = collision.gameObject.GetComponent<LudoTile>();
+            currentTile._occupyingDiskList.Remove(this);
+        }
     }
     #endregion
     #region MEMBER METHODS
     #endregion
     #region LOCAL METHODS
-    private void OnRollComplete(int lastRoll)
+    private void OnTurnSwitched(ETeam currentTurn)
     {
-        if (color == LudoManagers.Instance.TurnManager.currentTurn)
+        if (color == currentTurn)
         {
             LudoManagers.Instance.BoardManager.availableDisks.Add(this);
         }
-        else 
+        else
         {
             LudoManagers.Instance.BoardManager.availableDisks.Remove(this);
         }

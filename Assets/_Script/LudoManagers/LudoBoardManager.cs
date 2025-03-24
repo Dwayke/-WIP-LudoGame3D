@@ -15,7 +15,7 @@ public class LudoBoardManager : MonoBehaviour
     [SerializeField] List<LudoTile> _bluePath;
     [SerializeField] List<LudoTile> _yellowPath;
     [SerializeField] List<LudoTile> _greenPath;
-    public event Action OnMoveComplete;
+    public event Action<BaseDisk> OnMoveComplete;
     #endregion
     #region ENGINE
     private void OnEnable()
@@ -36,36 +36,40 @@ public class LudoBoardManager : MonoBehaviour
     }
     #endregion
     #region LOCAL METHODS
-    private void OnPieceSelected(BaseDisk selectedPiece)
+    private void OnPieceSelected(BaseDisk selectedDisk)
     {
-        MovePiece(selectedPiece);
+        selectedDisk.pieceState = EPieceState.Free;
+        MovePiece(selectedDisk);
     }
     private void MovePiece(BaseDisk selectedDisk)
     {
         int lastRoll = LudoManagers.Instance.TurnManager.lastRolls[^1];
-        Vector3 targetLocation /*= selectedDisk.currentTile.nextTile.transform.position + (Vector3.up * _yOffset)*/;
+        Vector3 targetLocation;
         switch (selectedDisk.color)
         {
             case ETeam.Red:
                 targetLocation = _redPath[selectedDisk.pathIndex+lastRoll].tileTransform.position + (Vector3.up * _yOffset);
-                selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(() => { OnMoveComplete.Invoke(); });
+                selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(() => { OnMoveComplete.Invoke(selectedDisk); });
+                selectedDisk.pathIndex += lastRoll;
                 break;
             case ETeam.Blue:
                 targetLocation = _bluePath[selectedDisk.pathIndex + lastRoll].tileTransform.position + (Vector3.up * _yOffset);
-                selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(() => { OnMoveComplete.Invoke(); });
+                selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(() => { OnMoveComplete.Invoke(selectedDisk); });
+                selectedDisk.pathIndex += lastRoll;
                 break;
             case ETeam.Yellow:
                 targetLocation = _yellowPath[selectedDisk.pathIndex + lastRoll].tileTransform.position + (Vector3.up * _yOffset);
-                selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(() => { OnMoveComplete.Invoke(); });
+                selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(() => { OnMoveComplete.Invoke(selectedDisk); });
+                selectedDisk.pathIndex += lastRoll;
                 break;
             case ETeam.Green:
                 targetLocation = _greenPath[selectedDisk.pathIndex + lastRoll].tileTransform.position + (Vector3.up * _yOffset);
-                selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(() => { OnMoveComplete.Invoke(); });
+                selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(() => { OnMoveComplete.Invoke(selectedDisk); });
+                selectedDisk.pathIndex += lastRoll;
                 break;
             default:
                 break;
         }
-        //selectedDisk.transform.DOMove(targetLocation, Time.deltaTime * 10).OnComplete(()=> { OnMoveComplete.Invoke(); });
     }
     #endregion
 }

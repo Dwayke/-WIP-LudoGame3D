@@ -30,7 +30,7 @@ public class LudoGameManager : MonoBehaviour
     public bool isGameStarted = false;
     public bool isFirstMove = true;
     public event Action OnGameStarted;
-    public event Action<int> OnDiceRollComplete;
+    public event Action<int,ETeam> OnDiceRollComplete;
     #endregion
     #region ENGINE
     #endregion
@@ -76,9 +76,9 @@ public class LudoGameManager : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
     }
-
     private void DetermineResult()
     {
+        ETeam rollPlayer = LudoManagers.Instance.TurnManager.currentTurn;
         if (_resultDetermined || _currentDice == null) return;
         _resultDetermined = true;
 
@@ -100,7 +100,7 @@ public class LudoGameManager : MonoBehaviour
         if(!isGameStarted)TryStartGame(result);
         Debug.Log("Dice Result: " + result);
 
-        OnDiceRollComplete.Invoke(result);
+        OnDiceRollComplete.Invoke(result,rollPlayer);
     }
     private void TryStartGame(int result)
     {
