@@ -7,6 +7,8 @@ public class LudoUIManager : MonoBehaviour
     [SerializeField] GameObject _rollButton;
     [SerializeField] TMP_Text _stateText;
     [SerializeField] TMP_Text _turnText;
+    [SerializeField] GameObject _victorUI;
+    [SerializeField] TMP_Text _victorText;
     #endregion
     #region ENGINE
     private void Update()
@@ -43,6 +45,11 @@ public class LudoUIManager : MonoBehaviour
             default:
                 break;
         }
+    }
+    public void DisplayWinner(ETeam winner)
+    {
+        _victorUI.SetActive(true);
+        _victorText.text = $"{winner} Player Has Won!";
     }
     #endregion
     #region LOCAL METHODS

@@ -35,6 +35,10 @@ public class LudoGameManager : MonoBehaviour
     #region ENGINE
     #endregion
     #region MEMBER METHODS
+    public void AnnounceWinner(ETeam team)
+    {
+        LudoManagers.Instance.UIManager.DisplayWinner(team);
+    }
     public void RollTheDice()
     {
         if (_isRolling) return;
