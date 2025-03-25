@@ -9,8 +9,6 @@ public class LudoPlayerController : MonoBehaviour
     #region VARS
     public Camera currentCamera;
     private LudoControls _controls;
-
-    public event Action<BaseDisk> OnPieceSelected;
     #endregion
     #region ENGINE
     private void OnEnable()
@@ -35,7 +33,7 @@ public class LudoPlayerController : MonoBehaviour
     #region LOCAL METHODS
     private void OnClick(InputAction.CallbackContext context)
     {
-        if (LudoManagers.Instance.GameStateManager.gameState != EGameState.PieceSelection) return;
+        if (LudoManagers.Instance.GameStateManager.gameState != EGameState.DiskSelection) return;
         Ray ray = currentCamera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit info, 100))
         {
@@ -43,26 +41,38 @@ public class LudoPlayerController : MonoBehaviour
             {
                 if (LudoManagers.Instance.TurnManager.lastRolls[^1] == 6)
                 {
-                    if (disk.color == LudoManagers.Instance.TurnManager.currentTurn&&disk.pieceState != EPieceState.Home)
+                    if (disk.color == LudoManagers.Instance.TurnManager.currentTurn&&disk.diskState != EDiskState.Home)
                     {
                         Debug.Log(disk);
-                        OnPieceSelected.Invoke(disk);
+                        disk.diskState = EDiskState.Free;
+                        LudoManagers.Instance.BoardManager.MoveDisk(disk);
+                        LudoManagers.Instance.GameStateManager.gameState = EGameState.DiskMotion;
                     }
                     else
                     {
-                        Debug.Log("Select a piece of yours");
+                        Debug.Log("Select a disk of yours");
                     }
                 }
                 else
                 {
-                    if (disk.color == LudoManagers.Instance.TurnManager.currentTurn&& disk.pieceState == EPieceState.Free)
+                    if (disk.color == LudoManagers.Instance.TurnManager.currentTurn && disk.diskState == EDiskState.Free && disk.pathIndex + LudoManagers.Instance.TurnManager.lastRolls[^1] <= 57)
                     {
                         Debug.Log(disk);
-                        OnPieceSelected.Invoke(disk);
+                        disk.diskState = EDiskState.Free;
+                        LudoManagers.Instance.BoardManager.MoveDisk(disk);
+                        LudoManagers.Instance.GameStateManager.gameState = EGameState.DiskMotion;
                     }
-                    else
+                    else if(disk.color != LudoManagers.Instance.TurnManager.currentTurn)
                     {
-                        Debug.Log("Select a piece of yours");
+                        Debug.Log("Select a disk of yours");
+                    }
+                    else if(disk.diskState != EDiskState.Free)
+                    {
+                        Debug.Log("Select a free disk");
+                    }
+                    else if (disk.pathIndex + LudoManagers.Instance.TurnManager.lastRolls[^1] > 57)
+                    {
+                        Debug.Log("Roll value is too large, Select a valid disk");
                     }
                 }
 

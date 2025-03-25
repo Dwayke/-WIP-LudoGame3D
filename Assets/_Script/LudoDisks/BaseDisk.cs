@@ -3,13 +3,12 @@ using UnityEngine;
 public class BaseDisk : MonoBehaviour
 {
     #region VARS
-    public EPieceState pieceState;
+    public EDiskState diskState;
     public ETeam color;
     [Range(0,3)]public int index;
     public int pathIndex;
     public LudoTile currentTile;
-    [SerializeField] LudoTile originTile;
-    [SerializeField] LudoTile homeTile;
+    public LudoTile originTile;
     #endregion
     #region ENGINE
     private void Start()
@@ -39,7 +38,7 @@ public class BaseDisk : MonoBehaviour
         if (collision.gameObject.GetComponent<LudoTile>() != null)
         {
             currentTile = collision.gameObject.GetComponent<LudoTile>();
-            currentTile._occupyingDiskList.Add(this);
+            currentTile.occupyingDiskList.Add(this);
         }      
     }
     private void OnTriggerExit(Collider collision)
@@ -47,7 +46,7 @@ public class BaseDisk : MonoBehaviour
         if (collision.gameObject.GetComponent<LudoTile>() != null)
         {
             currentTile = collision.gameObject.GetComponent<LudoTile>();
-            currentTile._occupyingDiskList.Remove(this);
+            currentTile.occupyingDiskList.Remove(this);
         }
     }
     #endregion
@@ -56,7 +55,7 @@ public class BaseDisk : MonoBehaviour
     #region LOCAL METHODS
     private void OnTurnSwitched(ETeam currentTurn)
     {
-        if (color == currentTurn)
+        if (color == currentTurn && diskState != EDiskState.Home)
         {
             LudoManagers.Instance.BoardManager.availableDisks.Add(this);
         }

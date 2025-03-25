@@ -8,7 +8,7 @@ public class LudoTile : MonoBehaviour
     public ETileType type;
     public ETeam color;
     [Range(0,17)] public int tileIndex;
-    public List<BaseDisk> _occupyingDiskList;
+    public List<BaseDisk> occupyingDiskList;
     public Transform tileTransform;
     #endregion
     #region ENGINE

@@ -53,7 +53,7 @@ public class LudoTurnManager : MonoBehaviour
     {
         foreach (var disk in LudoManagers.Instance.BoardManager.availableDisks)
         {
-            if (disk.pieceState == EPieceState.Free) return true;
+            if (disk.diskState == EDiskState.Free && disk.pathIndex + LudoManagers.Instance.TurnManager.lastRolls[^1] <= 57) return true;
         }
         return false;
     }
