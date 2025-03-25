@@ -3,6 +3,7 @@ using System;
 using UnityEngine;
 using System.Collections;
 using Random = UnityEngine.Random;
+using UnityEngine.SceneManagement;
 
 public class LudoGameManager : MonoBehaviour
 {
@@ -38,6 +39,11 @@ public class LudoGameManager : MonoBehaviour
     public void AnnounceWinner(ETeam team)
     {
         LudoManagers.Instance.UIManager.DisplayWinner(team);
+    }
+    public void RestartButton()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
     public void RollTheDice()
     {
