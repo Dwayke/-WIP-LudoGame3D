@@ -47,7 +47,7 @@ public class LudoBoardManager : MonoBehaviour
         if (selectedDisk.currentTile.type == ETileType.Base)
         {
             int targetIndex = selectedDisk.pathIndex + lastRoll;
-            targetLocation = currentPath[targetIndex].tileTransform.position + (Vector3.up * _yOffset * currentPath[targetIndex].occupyingDiskList.Count);
+            targetLocation = currentPath[targetIndex].tileTransform.position + ((Vector3.up * _yOffset) + (currentPath[targetIndex].occupyingDiskList.Count*Vector3.one));
             await selectedDisk.transform.DOMove(targetLocation, 0.5f).AsyncWaitForCompletion();
             selectedDisk.pathIndex = targetIndex;
             foreach (BaseDisk disk in currentPath[targetIndex].occupyingDiskList)
@@ -66,7 +66,7 @@ public class LudoBoardManager : MonoBehaviour
             for (int i = 1; i <= lastRoll; i++)
             {
                 int targetIndex = selectedDisk.pathIndex + i;
-                targetLocation = currentPath[targetIndex].tileTransform.position + (Vector3.up * _yOffset);
+                targetLocation = currentPath[targetIndex].tileTransform.position + ((Vector3.up * _yOffset) + (currentPath[targetIndex].occupyingDiskList.Count * Vector3.one));
                 await selectedDisk.transform.DOMove(targetLocation, moveSpeed).AsyncWaitForCompletion();
                 await UniTask.Delay(100);
             }
