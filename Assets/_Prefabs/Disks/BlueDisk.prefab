@@ -132,11 +132,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2acd1cfaaca80e6439e3d2b681180c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceState: 0
+  _componentIndexCache: 0
+  _addedNetworkObject: {fileID: 0}
+  _networkObjectCache: {fileID: 0}
+  diskState: 0
   color: 1
+  index: 0
+  pathIndex: 0
   currentTile: {fileID: 0}
   originTile: {fileID: 0}
-  homeTile: {fileID: 0}
 --- !u!65 &7998195003794659089
 BoxCollider:
   m_ObjectHideFlags: 0

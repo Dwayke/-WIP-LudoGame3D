@@ -1,6 +1,7 @@
+using FishNet.Object;
 using UnityEngine;
 
-public class BaseDisk : MonoBehaviour
+public class BaseDisk : NetworkBehaviour
 {
     #region VARS
     public EDiskState diskState;

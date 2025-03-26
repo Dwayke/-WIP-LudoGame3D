@@ -1,8 +1,9 @@
+using FishNet.Object;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LudoTurnManager : MonoBehaviour
+public class LudoTurnManager : NetworkBehaviour
 {
     #region VARS
     public ETeam currentTurn = 0;
@@ -27,7 +28,17 @@ public class LudoTurnManager : MonoBehaviour
     }
     #endregion
     #region MEMBER METHODS
-    public void SwitchTurn()
+    [ServerRpc(RequireOwnership = false)]
+    public void CmdSwitchTurn()
+    {
+        LudoManagers.Instance.GameStateManager.InitiateRollState();
+        if (currentTurn != ETeam.Green) currentTurn += 1;
+        else currentTurn = 0;
+        OnTurnSwitched.Invoke(currentTurn);
+        RpcSwitchTurn();
+    }
+    [ObserversRpc]
+    public void RpcSwitchTurn()
     {
         LudoManagers.Instance.GameStateManager.InitiateRollState();
         if (currentTurn != ETeam.Green) currentTurn += 1;
@@ -41,11 +52,11 @@ public class LudoTurnManager : MonoBehaviour
         lastRolls.Add(lastRoll);
         if (!LudoManagers.Instance.GameManager.isGameStarted&&lastRoll!=6)
         {
-            SwitchTurn();
+            CmdSwitchTurn();
         }
         else if (!CheckFreeDisks() && lastRoll != 6)
         {
-            SwitchTurn();
+            CmdSwitchTurn();
         }
         Debug.Log("Last Move: "+lastRolls[^1]);
     }

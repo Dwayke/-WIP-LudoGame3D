@@ -1,31 +1,28 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using FishNet.Object;
 
-public class LudoPlayerController : MonoBehaviour
+public class LudoPlayerController : NetworkBehaviour
 {
     #region VARS
     public Camera currentCamera;
     private LudoControls _controls;
     #endregion
     #region ENGINE
-    private void OnEnable()
+    public override void OnStartClient()
     {
-        _controls = new LudoControls();
-        _controls.Gameplay.Click.performed += OnClick;
-        _controls.Gameplay.Enable();
-    }
-    void Start()
-    {
+        base.OnStartClient();
         if (!currentCamera)
         {
             currentCamera = Camera.main;
         }
+        _controls = new LudoControls();
+        _controls.Gameplay.Click.performed += OnClick;
+        _controls.Gameplay.Enable();
     }
-    private void OnDisable()
+    public override void OnStopClient()
     {
+        base.OnStopClient();
         _controls.Gameplay.Click.performed -= OnClick;
         _controls.Gameplay.Disable();
     }

@@ -9,7 +9,10 @@ EditorBuildSettings:
     path: Assets/_Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/_Scenes/Scene.unity
+    path: Assets/_Scenes/OfflineScene.unity
+    guid: df0b2168e6c273d4a8543815b050eff3
+  - enabled: 1
+    path: Assets/_Scenes/OnlineScene.unity
     guid: b44cd0403952a56419b074f9c09e4b4f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 6e09dd541f8be6a48a7b42756e4a868a, type: 3}
