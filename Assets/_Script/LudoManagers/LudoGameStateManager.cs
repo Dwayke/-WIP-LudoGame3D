@@ -50,7 +50,7 @@ public class LudoGameStateManager : MonoBehaviour
         if (LudoManagers.Instance.TurnManager.lastRolls[^1] == 6 && selectedDisk.diskState == EDiskState.Locked)
         {
             LudoManagers.Instance.GameManager.isFirstMove = false;
-            LudoManagers.Instance.TurnManager.CmdSwitchTurn();
+            LudoManagers.Instance.TurnManager.SwitchTurn();
             gameState = EGameState.DiceRoll;
         }
         else if(LudoManagers.Instance.TurnManager.lastRolls[^1] == 6 && selectedDisk.diskState != EDiskState.Locked)
@@ -59,7 +59,7 @@ public class LudoGameStateManager : MonoBehaviour
         }
         else if(LudoManagers.Instance.TurnManager.lastRolls[^1] != 6)
         {
-            LudoManagers.Instance.TurnManager.CmdSwitchTurn();
+            LudoManagers.Instance.TurnManager.SwitchTurn();
             gameState = EGameState.DiceRoll;
         }
     }

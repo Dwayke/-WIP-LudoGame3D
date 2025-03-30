@@ -12,9 +12,11 @@ public class BaseDisk : NetworkBehaviour
     public LudoTile originTile;
     #endregion
     #region ENGINE
-    private void Start()
+    public override void OnStartServer()
     {
-        pathIndex = -6;
+        base.OnStartServer();
+        Spawn(gameObject);
+        gameObject.name = $"{color} Disk, Disk Index: {index}";
         if (color == LudoManagers.Instance.TurnManager.currentTurn)
         {
             LudoManagers.Instance.BoardManager.availableDisks.Add(this);
@@ -23,16 +25,19 @@ public class BaseDisk : NetworkBehaviour
         {
             LudoManagers.Instance.BoardManager.availableDisks.Remove(this);
         }
+    }
+
+    public override void OnStartClient()
+    {
+        base.OnStartClient();
+        pathIndex = -6;
         LudoManagers.Instance.TurnManager.OnTurnSwitched += OnTurnSwitched;
     }
-    private void OnDisable()
+    public override void OnStopClient()
     {
-        if(LudoManagers.Instance != null)
-        LudoManagers.Instance.TurnManager.OnTurnSwitched -= OnTurnSwitched;
-    }
-    private void Awake()
-    {
-        gameObject.name = $"{color} Disk, Disk Index: {index}";
+        base.OnStopClient();
+        if (LudoManagers.Instance != null)
+            LudoManagers.Instance.TurnManager.OnTurnSwitched -= OnTurnSwitched;
     }
     private void OnTriggerEnter(Collider collision)
     {

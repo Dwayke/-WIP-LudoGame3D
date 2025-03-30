@@ -188,6 +188,7 @@ GameObject:
   - component: {fileID: 4951888756686088276}
   - component: {fileID: 2118408321501020098}
   - component: {fileID: 7973464578484631327}
+  - component: {fileID: 1794241123005954072}
   m_Layer: 0
   m_Name: WaypointTile
   m_TagString: WaypointTile
@@ -226,7 +227,8 @@ MonoBehaviour:
   type: 1
   color: 0
   tileIndex: 0
-  _occupyingDiskList: []
+  occupyingDiskList: []
+  tileTransform: {fileID: 8302564816557721011}
 --- !u!114 &2118408321501020098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,3 +269,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &1794241123005954072
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3059798697287671699}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 1, z: 0.5}
+  m_Center: {x: 0, y: 0.5, z: 0}

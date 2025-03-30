@@ -1,9 +1,12 @@
 using FishNet.Object;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class LudoMatchPlayer : NetworkBehaviour
 {
     #region VARS
     public ETeam team;
+    public List<BaseDisk> playerDisks;
     public bool isReady = false;
     #endregion
     #region ENGINE
@@ -11,6 +14,7 @@ public class LudoMatchPlayer : NetworkBehaviour
     {
         base.OnStartClient();
         SetupPlayer();
+        SetupDisks();
     }
     public override void OnStopClient()
     {
@@ -19,6 +23,16 @@ public class LudoMatchPlayer : NetworkBehaviour
     }
     #endregion
     #region LOCAL METHODS
+    private void SetupDisks()
+    {
+        foreach (var disk in FindObjectsByType<BaseDisk>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        {
+            if(disk.color == team)
+            {
+                playerDisks.Add(disk);
+            }
+        }
+    }
     private void SetupPlayer()
     {
         CmdAddPlayer();

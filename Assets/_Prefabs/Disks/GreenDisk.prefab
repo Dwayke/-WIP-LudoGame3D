@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3786496372220624862}
   - component: {fileID: 5924500146976000979}
   - component: {fileID: 6532589417478165234}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 4792913915305085837}
   - component: {fileID: 1191253086979681001}
   - component: {fileID: 6501197962059389630}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GreenDisk
   m_TagString: Disk
   m_Icon: {fileID: 0}

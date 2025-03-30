@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8302564816557721011}
   - component: {fileID: 4010371230514472732}
   - component: {fileID: 2564092446038871805}
+  - component: {fileID: 6924863668836594559}
   m_Layer: 0
   m_Name: HomeTile
   m_TagString: Untagged
@@ -48,7 +49,8 @@ MonoBehaviour:
   type: 2
   color: 0
   tileIndex: 0
-  _occupyingDiskList: []
+  occupyingDiskList: []
+  tileTransform: {fileID: 8302564816557721011}
 --- !u!54 &2564092446038871805
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -76,3 +78,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &6924863668836594559
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3059798697287671699}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}

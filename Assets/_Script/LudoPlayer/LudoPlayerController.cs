@@ -32,7 +32,7 @@ public class LudoPlayerController : NetworkBehaviour
     {
         if (LudoManagers.Instance.GameStateManager.gameState != EGameState.DiskSelection) return;
         Ray ray = currentCamera.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit info, 100))
+        if (Physics.Raycast(ray, out RaycastHit info, 100,LayerMask.GetMask("Disk")))
         {
             if (info.collider.gameObject.TryGetComponent<BaseDisk>(out BaseDisk disk))
             {
@@ -41,7 +41,6 @@ public class LudoPlayerController : NetworkBehaviour
                     if (disk.color == LudoManagers.Instance.TurnManager.currentTurn&&disk.diskState != EDiskState.Home)
                     {
                         Debug.Log(disk);
-                        disk.diskState = EDiskState.Free;
                         LudoManagers.Instance.BoardManager.MoveDisk(disk);
                         LudoManagers.Instance.GameStateManager.gameState = EGameState.DiskMotion;
                     }
@@ -55,7 +54,6 @@ public class LudoPlayerController : NetworkBehaviour
                     if (disk.color == LudoManagers.Instance.TurnManager.currentTurn && disk.diskState == EDiskState.Free && disk.pathIndex + LudoManagers.Instance.TurnManager.lastRolls[^1] <= 57)
                     {
                         Debug.Log(disk);
-                        disk.diskState = EDiskState.Free;
                         LudoManagers.Instance.BoardManager.MoveDisk(disk);
                         LudoManagers.Instance.GameStateManager.gameState = EGameState.DiskMotion;
                     }
