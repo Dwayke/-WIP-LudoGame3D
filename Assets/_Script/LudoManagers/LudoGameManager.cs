@@ -4,8 +4,9 @@ using UnityEngine;
 using System.Collections;
 using Random = UnityEngine.Random;
 using UnityEngine.SceneManagement;
+using FishNet.Object;
 
-public class LudoGameManager : MonoBehaviour
+public class LudoGameManager : NetworkBehaviour
 {
     #region VARS
     [SerializeField] private GameObject _dicePrefab;
@@ -40,11 +41,11 @@ public class LudoGameManager : MonoBehaviour
     {
         LudoManagers.Instance.UIManager.DisplayWinner(team);
     }
-    public void RestartButton()
-    {
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
-    }
+    //public void RestartButton()
+    //{
+    //    Scene currentScene = SceneManager.GetActiveScene();
+    //    SceneManager.LoadScene(currentScene.name);
+    //}
     public void RollTheDice()
     {
         if (_isRolling) return;
@@ -61,9 +62,35 @@ public class LudoGameManager : MonoBehaviour
         Vector3 randomTorque = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         _diceRigidbody.AddTorque(randomTorque * _torqueForce);
 
+        
         _isRolling = true;
         _resultDetermined = false;
+        CmdRollTheDice(_diceRigidbody.gameObject.transform);
         StartCoroutine(CheckDiceStop());
+    }
+    [ServerRpc(RequireOwnership = false)]
+    private void CmdRollTheDice(Transform diceTransform)
+    {
+        if (_currentDice != null) Destroy(_currentDice);
+        _currentDice = Instantiate(_dicePrefab, diceTransform.position,diceTransform.rotation);
+        Spawn(_currentDice);
+        Vector3 randomDirection = new Vector3(Random.Range(-1f, 1f), Random.Range(0.5f, 1f), Random.Range(-1f, 1f)).normalized;
+        _diceRigidbody.AddForce(randomDirection * _rollForce, ForceMode.Impulse);
+        Vector3 randomTorque = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
+        _diceRigidbody.AddTorque(randomTorque * _torqueForce);
+        _isRolling = true;
+        _resultDetermined = false;
+        DetermineResult();
+        RpcRollTheDice(_currentDice.transform);
+    }
+    [ObserversRpc]
+    private void RpcRollTheDice(Transform diceTransform)
+    {
+        if (_isRolling) return;
+        if (_currentDice != null) Destroy(_currentDice);
+        _isRolling = true;
+        _resultDetermined = false;
+        DetermineResult();
     }
     #endregion
     #region LOCAL METHODS
